@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/glorp.jpg" type="image/jpg">
+    <title>very cool website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        <span style="background-color: lightcoral;" title="this is a title tooltip">
+        The Glorp Cult</h1>
+        </span>
+    <hr>
+
+    <pre>
+        <span style="color: black; font-size: 20px; font-family: 'Courier New', Courier, monospace;">
+        <div style="background-color: lightblue;">
+    Halo:D
+    dis is my very cool website
+    i hope u like it
+        </div>
+        </span>
+    </pre>
+
+    <p>for starter, i have some confession to make, pls click the link below</p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    target="_blank"
+    title="clik for car">
+        my confession
+    </a>
+    <br>
+    
+    <h4>
+        <span style="background-color: lightyellow; border : 1px solid black; padding: 5px;">
+            Here is some of my informations:
+        </span>
+    </h4>
+    <ol>
+        <li>
+            <a href="https://www.youtube.com/watch?v=yH88qRmgkGI&list=RDyH88qRmgkGI&start_radio=1"
+            target="_blank"
+            title="my link"> link1
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=yH88qRmgkGI&list=RDyH88qRmgkGI&start_radio=1"
+            target="_blank"
+            title="my link"> link2
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=yH88qRmgkGI&list=RDyH88qRmgkGI&start_radio=1"
+            target="_blank"
+            title="my link"> link3
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=yH88qRmgkGI&list=RDyH88qRmgkGI&start_radio=1"
+            target="_blank"
+            title="my link"> link4
+            </a>
+        </li>
+    </ol>
+
+    <h4>
+        <span style="background-color: lightyellow; border : 1px solid black; padding: 5px;">
+            glorp's info:
+        </span>
+    </h4>
+    <dl> 
+        <div style="background-color: lightgreen; width: 200px; border: 2px solid black; padding: 10px;">
+        <dt>name:</dt>
+        <dd>glorp</dd>
+
+        <dt>age:</dt>
+        <dd>6</dd>
+
+        <dt>hobby:</dt>
+        <dd>eating, sleeping, coding, playing with friends</dd>
+
+        <dt>mind:</dt>
+        <dd>contolled</dd>
+        </div>
+    </dl>
+    <hr>
+
+    <p>with that out of the way, here is my friend glorp</p>
+    <img src="images/glorp.jpg" alt="glorp pic" width="300">
+    <br>
+    <p>glorp song:</p>
+    <audio controls loop>
+        <source src="We are Charlie Kirk.mp3" type="audio/mpeg">
+        <source src="We are Charlie Kirk.ogg" type="audio/ogg">
+    </audio>
+    <hr> 
+
+    <img src="images/dog.gif" alt="sniffa" height="100">
+    <p>:sniff:</p>
+    <br>
+
+    <p>scary video:O</p>
+    <video controls width="200" poster="images/glorp.jpg">
+        <source src="kanye.mp4" type="video/mp4">
+        <source src="kanye.webm" type="video/webm">
+    </video>
+    <hr>
+
+    <button onclick="spawnImage()" style="font-size: 25px; background-color: lightpink;">
+        click for cool glorp thing!
+    </button>
+    <script>
+        function spawnImage() {
+            const imgElement = document.createElement("img");
+            const roll = Math.floor(Math.random() * 100);
+            if (roll < 1) {
+                alert("wow u r so lucky!!! u found the easter egg!!!");
+                imgElement.src = "images/not_glorp.webp";
+                imgElement.style.width = "225px";
+            } 
+            else{
+                imgElement.src = "images/glorp.jpg";
+            }
+            imgElement.classList.add("spawned-image");
+            document.body.appendChild(imgElement);
+        }
+    </script>
+
+        <form>
+            <label for="feedback">leave feedback for glorp:</label><br>
+            <input type="text" id="feedback" name="feedback" placeholder="your feedback here" required><br>
+            <input type="reset" value="clear">
+            <button type="submit">submit</button>
+        </form>
+        <hr>
+        <form>
+            <p>we also need your informations for whatever reasons lol</p>
+            <label for="email">email:</label><br>
+            <input type="email" id="email" name="email" placeholder="glorp@gmail.com" required><br>
+            <label for="phone">phone:</label><br>  
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+            <input type="reset" value="clear">
+            <button type="submit">submit</button>
+        </form>
+
+    <br><br>
+    <footer>
+        <p>
+            © 2067 very cool website | created by glorp
+        </p>
+    </footer>
+
+</body>
+</html>
