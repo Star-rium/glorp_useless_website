@@ -1,0 +1,13 @@
+.header {
+    background-color: darkgreen;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'Calibri', sans-serif;
+}
+.title {
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
